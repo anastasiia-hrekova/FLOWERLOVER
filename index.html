@@ -3,63 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap"
+      rel="stylesheet"/>
 
     <title>FLOWERLOVER</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <img src="./images/logo.svg" alt="Logo" />
-        <ul>
-          <li>Головна</li>
-          <li>Каталог</li>
-          <li>Про нас</li>
-          <li>Як замовити</li>
-          <li>Відгуки</li>
-          <li>Контакти</li>
+        <div class="header__block">
+          <img class="header__logo" src="./images/logo.svg" alt="Logo" />
+        <ul class="header__nav">
+          <a class="header__nav-item" href="#"><li>Головна</li></a>
+          <a class="header__nav-item" href="#"><li>Каталог</li></a>
+          <a class="header__nav-item" href="#"><li>Про нас</li></a>
+          <a class="header__nav-item" href="#"><li>Як замовити</li></a>
+          <a class="header__nav-item" href="#"><li>Відгуки</li></a>
+          <a class="header__nav-item" href="#"><li>Контакти</li></a>
         </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1>Неймовірні <br /><span>букети</span> зі свіжих квітів</h1>
-          <p>З доставкою по Києву протягом 1 години</p>
-          <button type="button">ЗАМОВИТИ КВІТИ</button>
+          <div class="hero-section__block">
+            <div class="hero-section__main">
+              <h1 class="hero-section__title">Неймовірні <br /><span class="hero-section__title-accent text-upper text-brand">букети</span> зі свіжих квітів</h1>
+          <p class="hero-section__text">з доставкою по києву протягом 1 години</p>
+          <button class="button text-upper" type="button">замовити квіти</button>
+            </div>
+          <ul class="hero-section__assets">
+            <li class="hero-section__assets-blocks">
+              <img class="hero-section__assets-img" src="./images/rose.png" alt="rose" />
+              <p class="hero-section__assets-text">Щоденне оновлення свіжих квітів</p>
+            </li>
+            <li class="hero-section__assets-blocks">
+              <img class="hero-section__assets-img" src="./images/map-location.png" alt="map" />
+              <p class="hero-section__assets-text">Безкоштовна доставка в будь яку точку міста</p>
+            </li>
+            <li class="hero-section__assets-blocks">
+              <img class="hero-section__assets-img" src="./images/navigation.png" alt="navigation" />
+              <p class="hero-section__assets-text">Більше 1000 сортів квітів з усього світу</p>
+            </li>
+          </ul>
+          </div>
         </div>
-        <ul>
-          <li>
-            <img src="./images/rose.png" alt="rose" />
-            <p>Щоденне оновлення свіжих квітів</p>
-          </li>
-          <li>
-            <img src="./images/map-location.png" alt="map" />
-            <p>Безкоштовна доставка в будь яку точку міста</p>
-          </li>
-          <li>
-            <img src="./images/navigation.png" alt="navigation" />
-            <p>Більше 1000 сортів квітів з усього світу</p>
-          </li>
-        </ul>
       </section>
       <section class="catalog">
         <div class="container">

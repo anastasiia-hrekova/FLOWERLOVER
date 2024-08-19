@@ -1,0 +1,72 @@
+.hero-section{
+    @include center;
+    padding-top: 196px;
+    padding-bottom: 50px;
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    &__main{
+        margin-bottom: 437px;
+
+        &::after{
+            position: absolute;
+            @include size(900px, 690px);
+            background: 
+             url('/images/hero-section-back.png') no-repeat right,
+             url('/images/hero-section-elipse.png') 70px 202px no-repeat;
+            content: '';
+            z-index: -1;
+            top: 226px;
+            right: 0;
+        }
+
+    }
+
+    &__title{
+        color: var(--color-brand);
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        @include text (48px, 500, 60px);
+        margin-bottom: 24px;
+
+        &-accent{
+            font-style: normal;
+            @include text (86px, 400, 60px);
+            padding-left: 110px;
+        }
+    }
+
+    &__text{
+        text-transform: capitalize;
+        @include text(24px, 400, 30.17px);
+        padding-left: 110px;
+        margin-bottom: 42px;
+    }
+
+    &__assets{
+        @include center;
+        flex-direction: row;
+        gap: 124px;
+
+        &-blocks{
+            @include size(201px, 95px);
+            text-align: center;
+                       
+        }
+
+        &-img{
+            @include size (40px, 40px);
+            }
+
+        &-text{
+            top: 0;
+            @include text(16px, 400, 20.11px);
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.header{
+    @include center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 26px;
+        padding-bottom: 12px;
+    }
+
+    &__logo{
+        @include size(126px,63px);
+        
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        @include text(20px,400, 25.14px);
+        color: var(--color-main);
+        
+    }
+
+
+}
