@@ -20,13 +20,13 @@
         margin-left: 349px;
         margin-bottom: 100px;
  
-        &::before{
-            position: absolute;
-            @include size(491px, 2px);
-            background-image: url('/images/line.png');
-            background-repeat: no-repeat;
+        &::after{
+            position: absolute;            
             content: '';
-
+            @include size(570px, 2px);
+            background: var(--color-brand);
+           left: 0;
+                         
         }
     }
 
