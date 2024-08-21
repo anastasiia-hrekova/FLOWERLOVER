@@ -8,3 +8,17 @@
     text-align: center;
     margin-left: 110px;
     }
+
+    .show-all{
+        @include center;
+        @include size(182px, 50px);
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 15px;
+        color: var(--color-main-light);
+       @include text(16px, 400, 20px);
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin: 15px 30px 15px 30px;
+
+    }

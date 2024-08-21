@@ -63,31 +63,43 @@
       </section>
       <section class="catalog">
         <div class="container">
-          <h2>Каталог</h2>
-          <h3>Доставка квітів в Києві</h3>
-          <form>
+          <h2 class="catalog__title">Каталог</h2>
+         <div class="catalog__sort">
+          <h3 class="catalog__sort-title">Доставка квітів в Києві</h3>
+          <form class="catalog__form">
             <label for="form"></label>
-            <select name="price" id="price-select">
-              <option value="">Ціна ...</option>
+            <select class="catalog__form-item" name="price" id="price-select">
+              <option value="">Ціна...</option>
               <option value="less-200">&lt;200</option>
               <option value="200-500">200-500 &#8372;</option>
               <option value="more-1000">&gt;1000 &#8372;</option>
             </select>
-            <select name="flower" id="flower-select"></select>
-            <select name="for" id="for-select"></select>
-            <select name="reason" id="reason-select"></select>
-            <select name="style" id="style-select"></select>
+            <select class="catalog__form-item" name="flower" id="flower-select">
+              <option value="">Квіти...</option>
+            </select>
+            <select class="catalog__form-item" name="for" id="for-select">
+              <option value="">Кому...</option>
+            </select>
+            <select class="catalog__form-item" name="reason" id="reason-select">
+              <option value="">Привід...</option>
+            </select>
+            <select class="catalog__form-item" name="style" id="style-select">
+              <option value="">Стиль...</option>
+            </select>
           </form>
-          <h3>Хіт продажів</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li> 
-            <li></li>
+         </div>
+          <div class="catalog__products">
+            <h3 class="catalog__sort-title">Хіт продажів</h3>
+          <ul class="catalog__list">
+            <li class="catalog__item"></li>
+            <li class="catalog__item"></li>
+            <li class="catalog__item"></li>
+            <li class="catalog__item"></li>
+            <li class="catalog__item"></li> 
+            <li class="catalog__item"></li>
           </ul>
-          <button type="button">Дивитись всі</button>
+          <button class="show-all" type="button">ДИВИТИСЬ ВСІ</button>
+          </div>
         </div>
       </section>
 <section class="asset">
