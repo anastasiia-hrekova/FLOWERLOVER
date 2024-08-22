@@ -1,0 +1,20 @@
+.carousel__button{
+    flex-shrink: 0;
+    @include center;
+    padding: 0;
+    @include size(70px, 70px);
+    border: none;
+    background: none;
+    fill: var(--color-brand);
+
+    &:hover{
+        fill: var(--color-brand-light);
+        transition: 0.3s;
+    }
+
+    &.prev{
+        transform: rotate(180deg);
+          
+    }
+   
+}

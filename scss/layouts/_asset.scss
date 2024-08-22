@@ -1,5 +1,6 @@
 .asset{
     @include center;
+    margin-bottom: 132px;
 
 
     &__title{
@@ -13,7 +14,7 @@
         &::after{
             position: absolute;            
             content: '';
-            @include size(570px, 2px);
+            @include size(36%, 2px);
             background: var(--color-brand);
             right: 0;            
     }
@@ -37,8 +38,16 @@
     &-img{
         @include size(658px, 477px);
             }
+  
+    &-title{
+        @include text(32px, 400, 40.22px);
+        color: var(--color-main-light);
+        margin-bottom: 16px;
+            }
 
-            
+    &-text{
+        @include text(20px, 300, 25.14px);
+    }
 } 
 
 &__text{ 

@@ -1,0 +1,36 @@
+.consultation{
+
+&__form{
+    @include center;
+    flex-direction: column;
+    gap: 40px;
+
+    &-title{
+        @include size(347px, 120px);
+        @include text(32px, 400, 40.22px);
+        margin: 0;
+        text-align: left;
+
+    }
+
+    &-field{
+        @include center;
+        @include size(416px, 70px);
+        background-color: var(--color-main-light);
+        color: var(--color-icons);
+        border-radius: 15px;
+        margin-bottom: 40px;
+        margin-left: 55px;
+    }
+
+    &-input{
+        @include center;
+        @include text(20px, 700, 25.14px);
+        color: var(--color-icons);
+        @include size(339px, 68px);
+        border-radius: 15px;
+        border: none;
+
+    }
+}
+}

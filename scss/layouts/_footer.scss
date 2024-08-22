@@ -1,0 +1,90 @@
+.footer{
+    @include center;
+    margin-bottom: 53px;
+    
+
+    &::after{
+    position: absolute;
+    content: '';
+    @include size(100%, 2px);
+    background: var(--color-brand);
+    top: 6100px;
+}
+     
+    &__block{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 298px;
+        margin-top: 40px;
+        margin-bottom: 53px;
+        
+    }
+
+    &__nav{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        @include size(114px, 253px);
+        gap: 32px;
+
+        &-text{
+           @include text(20px, 400, 25.14px); 
+           color: #F5EBEB;
+
+           &:hover{
+            color: var( --color-brand-light);
+            transition: 0.3s;
+           }
+        }
+
+    }
+
+    &__icons{
+        @include center;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__logo{
+        @include size(264px, 137px);
+    }
+
+    &__media{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 46px;
+
+        &-icon{
+            @include size(40px, 40px);
+            fill: var(--color-brand);
+
+            &:hover{
+                transform: scale(1.2);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__address{
+        @include center;
+        @include size(256px, 256px);
+        flex-direction: column;
+        text-align: center;
+        @include text(20px, 400, 25.14px);
+            font-style: normal;
+        
+
+        &-link{
+            @include text(24px, 400, 30.17px);
+            margin-bottom: 24px;
+
+            &:hover{
+                color: var(--color-brand-light)
+            }
+        }
+
+    }
+}

@@ -14,8 +14,7 @@
       rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap"
       rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap"
-      rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
 
     <title>FLOWERLOVER</title>
   </head>
@@ -25,18 +24,18 @@
         <div class="header__block">
           <img class="header__logo" src="./images/logo.svg" alt="Logo" />
         <ul class="header__nav">
-          <a class="header__nav-item" href="#"><li>Головна</li></a>
-          <a class="header__nav-item" href="#"><li>Каталог</li></a>
-          <a class="header__nav-item" href="#"><li>Про нас</li></a>
-          <a class="header__nav-item" href="#"><li>Як замовити</li></a>
-          <a class="header__nav-item" href="#"><li>Відгуки</li></a>
-          <a class="header__nav-item" href="#"><li>Контакти</li></a>
+          <a class="header__nav-item" href="#hero-section"><li>Головна</li></a>
+          <a class="header__nav-item" href="#catalog"><li>Каталог</li></a>
+          <a class="header__nav-item" href="#asset"><li>Про нас</li></a>
+          <a class="header__nav-item" href="#consultation"><li>Як замовити</li></a>
+          <a class="header__nav-item" href="#clients"><li>Відгуки</li></a>
+          <a class="header__nav-item" href="#footer"><li>Контакти</li></a>
         </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="hero-section">
         <div class="container">
           <div class="hero-section__block">
             <div class="hero-section__main">
@@ -61,7 +60,7 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <h2 class="catalog__title">Каталог</h2>
          <div class="catalog__sort">
@@ -102,7 +101,7 @@
           </div>
         </div>
       </section>
-<section class="asset">
+<section class="asset" id="asset">
 <div class="container">
     <h2 class="asset__title">Якість в деталях</h2>
     <ul class="asset__block">
@@ -110,15 +109,15 @@
             <img class="asset__item-img" src="./images/flowers.png" alt="flowers">
             <div class="asset__text">
               <h4 class="asset__item-title">Контроль свіжості квітів </h4>
-            <p class="asset__item-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span>широкий асортимент квітів </span>, 
-              починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
-                Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету. </p>
+            <p class="asset__item-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span class="text-bold ">широкий асортимент квітів </span>, 
+              починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.  </p>
+            <p class="asset__item-text">Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
             </div>
         </li>
         <li class="asset__item">
             <div class="asset__text">
               <h4 class="asset__item-title">Оформлення букетів </h4>
-            <p class="asset__item-text">Ми готові зібрати <span>унікальний букет по індивідуальному замовленню</span> . Наші флористи втілять в життя будь яку Вашу ідею!</p>  
+            <p class="asset__item-text">Ми готові зібрати <span class="text-bold">унікальний букет по індивідуальному замовленню</span> . Наші флористи втілять в життя будь яку Вашу ідею!</p>  
             </div>
             <img class="asset__item-img" src="./images/florist.png" alt="florist">
         </li>
@@ -126,85 +125,147 @@
             <img class="asset__item-img" src="./images/bouqet.png" alt="bouquet">
             <div class="asset__text">
               <h4 class="asset__item-title">Швидка доставка</h4>
-            <p class="asset__item-text">Ми робимо доставки по Україні протягом <span>3-х годин</span> з моменту оплати замовлення.  </p>  
+            <p class="asset__item-text">Ми робимо доставки по Україні протягом <span class="text-bold">3-х годин</span> з моменту оплати замовлення.  </p>  
             </div>
         </li> 
     </ul>
 </div>
 </section>
-<section class="consultation">
+<section class="consultation" id="consultation">
 <div class="container">
-    <h2>Не можете визначитись з вибором букету?</h2>
-    <div>
-        <h4>Наш менеджер по телефону: </h4>
-        <ul>
-            <li><span>Відповість</span> на будь які запитання</li>
-            <li><span>Підбере рішення</span> відповідно 
-                до ваших запитів та бажань</li>
-            <li><span>Підготує унікальну пропозицію</span>
-                та детально розповість Вам про наші букети</li>
-            <li><span>Оформить</span> для Вас подарунок-сюрприз</li>
-        </ul>
+    <h2 class="consultation__title">Не можете визначитись з вибором букету?</h2>
+    <div class="consultation__block">
+      <div class="consultation__form">
+        <h4 class="consultation__form-title"><span class="text-bold">Відправте заявку</span> <br>і Вам зателефонують 
+          протягом однієї хвилини</h4>
+        <form name="consultation__form" autocapitalize="off">
+          <div class="consultation__form-field">
+            <label class="visualy-hidden" for="user-name"></label>
+          <input class="consultation__form-input" 
+          type="text" 
+          id="user-name" 
+          name="user-name"
+          placeholder="Ім'я"
+          required>
+        </div>
+          <div class="consultation__form-field">
+            <label class="visualy-hidden" for="user-tel"></label>
+          <input class="consultation__form-input" 
+          type="tel" 
+          id="user-tel" 
+          name="user-tel"
+          placeholder="Телефон"
+          pattern="^/+[0-9]{12}"
+          required>
+          </div>
+        </form>
+        <button class="button form-button" type="button">Залишити заявку</button>
+      </div>
+      <div class="consultation__info">
+        <h4 class="consultation__info-title">Наш менеджер по телефону: </h4>
+        <ul class="consultation__info-list">
+            <li class="consultation__info-item">
+              <svg class="consultation__info-svg" width="48px" height="48px">
+                <use href="./images/icons.svg#icon-check"/> 
+            </svg>
+              <h3 class="consultation__info-text"><span class="text-bold">Відповість</span> на будь які запитання</h3></li>
+            <li  class="consultation__info-item">
+              <svg class="consultation__info-svg" width="48px" height="48px">
+                <use href="./images/icons.svg#icon-check"/> 
+            </svg>
+              <h3 class="consultation__info-text"><span class="text-bold">Підбере рішення</span> відповідно 
+                <br> до ваших запитів та бажань</h3></li>
+            <li  class="consultation__info-item">
+              <svg class="consultation__info-svg" width="48px" height="48px">
+                <use href="./images/icons.svg#icon-check"/> 
+            </svg>
+              <h3 class="consultation__info-text"><span class="text-bold">Підготує унікальну пропозицію</span>
+                <br>та детально розповість Вам про наші букети</h3></li>
+            <li  class="consultation__info-item">
+              <svg class="consultation__info-svg" width="48px" height="48px">
+                <use href="./images/icons.svg#icon-check"/> 
+            </svg>
+              <h3 class="consultation__info-text"><span class="text-bold">Оформить</span> для Вас подарунок-сюрприз</h3></li>
+          </ul>
+    </div>
     </div>
 </div>
 </section>
-<section class="clients">
+<section class="clients" id="clients">
 <div class="container">
-    <button type="button">prev</button>
-    <ul>
-        <li>
+  <h2 class="clients__title">Наші клієнти</h2>
+    <div class="clients__carousel">
+      <button class="carousel__button prev" type="button">
+        <svg width="40px" height="40px">
+          <use href="./images/icons.svg#icon-arrow" /> 
+      </svg>
+      </button>
+    <ul class="clients__list">
+        <li class="clients__list-item">
             <img src="./images/clients-1.jpg" alt="your-photos">
         </li>
-        <li>
+        <li class="clients__list-item">
             <img src="./images/clients-2.jpg" alt="your-photos">
         </li>
-        <li>
+        <li class="clients__list-item">
             <img src="./images/clients-3.jpg" alt="your-photos">
         </li>
-        <li>
+        <li class="clients__list-item">
             <img src="./images/clients-4.jpg" alt="your-photos">
         </li>
     </ul>
-    <button type="next">prev</button>
+    <button class="carousel__button next" type="next">
+      <svg width="40px" height="40px">
+        <use href="./images/icons.svg#icon-arrow" /> 
+    </svg>
+    </button>
+    </div>
 </div>
 </section>
     </main>
-    <footer>
+    <footer class="footer" id="footer">
         <div class="container">
-            <ul>
-                <li>Головна</li>
-                <li>Каталог</li>
-                <li>Про нас</li>
-                <li>Як замовити</li>
-                <li>Відгуки</li>
-                <li>Контакти</li>
+            <div class="footer__block">
+              <ul class="footer__nav">
+                <li><a class="footer__nav-text" href="#hero-section">Головна</a></li>
+                <li><a class="footer__nav-text" href="#catalog">Каталог</a></li>
+                <li><a class="footer__nav-text" href="#asset">Про нас</a></li>
+                <li><a class="footer__nav-text" href="#consultation">Як замовити</a></li>
+                <li><a class="footer__nav-text" href="#clients">Відгуки</a></li>
+                <li><a class="footer__nav-text" href="#footer">Контакти</a></li>
               </ul>
-              <div>
-                <img src="./images/logo.svg" alt="Logo">
-                <svg width="40px" height="40px">
+              <div class="footer__icons">
+                <a href="index.html"><img class="footer__logo" src="./images/logo.svg" alt="Logo"></a>
+                <div class="footer__media">
+                  <svg class="footer__media-icon" width="40px" height="40px">
                     <use href="./images/icons.svg#icon-tel" /> 
                 </svg>
-                <svg width="40px" height="40px">
+                <svg class="footer__media-icon" width="40px" height="40px">
                     <use href="./images/icons.svg#icon-instagram" /> 
                 </svg>
-                <svg width="40px" height="40px">
+                <svg class="footer__media-icon" width="40px" height="40px">
                     <use href="./images/icons.svg#icon-facebook" /> 
                 </svg>
+                </div>
               </div>
-              <address>
+              <address class="footer__address">
                 <p>
-                    <a href="tel:+380977775577">+38097 777 55 77</a>
-                </p>
-                <p>Наш телефон</p>
+                    <a class="footer__address-link" href="tel:+380977775577">+38097 777 55 77</a>
+                    <br><span class="footer__adress-text">
+                      Наш телефон
+                    </span></p>
                 <p>
-                    <a href="mailto:info@floverlover.ua">info@floverlover.ua</a>
-                </p>
-                <p>Контактний е-mail</p>
+                    <a class="footer__address-link" href="mailto:info@floverlover.ua">info@floverlover.ua</a>
+                <br><span class="footer__adress-text">
+                  Контактний е-mail
+                </span></p>
                 <p>
-                    <a href="https://maps.app.goo.gl/c8TwaMLYWyt4VZZk9 " target="_blank">Київ <br>вул. Маріупольська, 14.</a>
-              </p>
-                <p>Наш магазин</p>
+                    <a class="footer__address-link" href="https://maps.app.goo.gl/c8TwaMLYWyt4VZZk9 " target="_blank">Київ <br>вул. Маріупольська, 14.</a>
+               <br><span class="footer__adress-text">
+                Наш магазин
+               </span></p>
               </address>
+            </div>
         </div>
     </footer>
   </body>
