@@ -1,4 +1,5 @@
 .footer{
+    position: relative;
     @include center;
     margin-bottom: 53px;
     
@@ -8,7 +9,7 @@
     content: '';
     @include size(100%, 2px);
     background: var(--color-brand);
-    top: 6100px;
+    top: 0;
 }
      
     &__block{
@@ -30,7 +31,7 @@
         gap: 32px;
 
         &-text{
-           @include text(20px, 400, 25.14px); 
+           @include text(20px, 400, 25px); 
            color: #F5EBEB;
 
            &:hover{
@@ -73,12 +74,12 @@
         @include size(256px, 256px);
         flex-direction: column;
         text-align: center;
-        @include text(20px, 400, 25.14px);
+        @include text(20px, 400, 25px);
             font-style: normal;
         
 
         &-link{
-            @include text(24px, 400, 30.17px);
+            @include text(24px, 400, 30px);
             margin-bottom: 24px;
 
             &:hover{

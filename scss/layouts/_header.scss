@@ -9,8 +9,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 26px;
+        padding-top: 32px;
         padding-bottom: 12px;
+     
+        @media screen and (min-width: $bp-tablet) {
+            padding-top: 26px;
+          }
     }
 
     &__logo{
@@ -19,12 +23,40 @@
     }
 
     &__nav{
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            @include text(16px,400, 21px);
+            color: var(--color-main);
+            
+         }
+
+        @media screen and (min-width: $bp-desktop) {
+            @include text(20px,400, 25px);
+           
+        }        
+    }
+
+    &__mobile{
         display: flex;
-        flex-direction: row;
-        gap: 32px;
-        @include text(20px,400, 25.14px);
-        color: var(--color-main);
-        
+          justify-content: space-between;
+          gap: 16px; 
+
+        @media screen and (min-width: $bp-tablet) {
+            display: none;       
+        }
+
+        &-icons{
+            @include size(42px, 42px);
+
+            &:hover{
+                transform: scale(1.2);
+                transition: 0.3s;
+            }
+        }
     }
 
 

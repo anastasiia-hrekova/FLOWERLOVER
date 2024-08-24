@@ -4,7 +4,8 @@
 
 
     &__title{
-        @include text(36px, 600, 47.99px);
+        position: relative;
+        @include text(36px, 600, 48px);
         font-family: 'Playfair Display', serif;
         color: var(--color-brand);
         text-align: right;
@@ -14,9 +15,10 @@
         &::after{
             position: absolute;            
             content: '';
-            @include size(36%, 2px);
+            @include size(494px, 2px);
             background: var(--color-brand);
-            right: 0;            
+            right: -195px;
+            bottom: 0;            
     }
 }
 
@@ -40,13 +42,13 @@
             }
   
     &-title{
-        @include text(32px, 400, 40.22px);
+        @include text(32px, 400, 40px);
         color: var(--color-main-light);
         margin-bottom: 16px;
             }
 
     &-text{
-        @include text(20px, 300, 25.14px);
+        @include text(20px, 300, 25px);
     }
 } 
 

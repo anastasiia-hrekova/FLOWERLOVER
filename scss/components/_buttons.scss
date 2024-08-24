@@ -1,12 +1,22 @@
 .button{
-    @include size (437px, 62px);
-    @include text(24px, 400, 30.17px);
+    @include size (360px, 55px);    
+    @include text(24px, 400, 30px);
     background-color: var(--color-brand);
     border-radius: 15px;
     border: 2px solid var(--color-brand);
     color: var(--color-main);
     text-align: center;
-    margin-left: 110px;
+    margin-left: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        @include size (437px, 62px); 
+        margin-left: 110px; 
+        
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        margin-left: 180px;
+    }
 
     &:hover{
         background-color: transparent;

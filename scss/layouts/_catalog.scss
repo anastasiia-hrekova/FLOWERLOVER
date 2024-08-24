@@ -1,4 +1,5 @@
 .catalog{
+    position: relative;
     @include center;
     padding-top: 44px;
 
@@ -14,7 +15,8 @@
         }
 
     &__title{
-        @include text(36px, 600, 47.99px);
+        position: relative;
+        @include text(36px, 600, 48px);
         font-family: 'Playfair Display', serif;
         color: var(--color-brand);
         text-align: left;
@@ -24,10 +26,11 @@
         &::after{
             position: absolute;            
             content: '';
-            @include size(36%, 2px);
+            @include size(491px, 2px);
             background: var(--color-brand);
-           left: 0;
-                         
+            left: -345px;
+            bottom: 0
+                                     
         }
     }
 
@@ -42,7 +45,7 @@
         &-title{
             font-family: 'Playfair Display', serif;
             text-align: center;
-            @include text(36px, 600, 47.99px);
+            @include text(36px, 600, 48px);
             margin-top: 0;
             margin-bottom: 20px;
         }
@@ -59,7 +62,7 @@
                
         &-item{
             @include size(140px, 23px);            
-            @include text(18px, 300, 22.63px);
+            @include text(18px, 300, 23px);
             text-align: left;
             border: none;
             background-color:transparent;

@@ -7,7 +7,7 @@
 
     &-title{
         @include size(347px, 120px);
-        @include text(32px, 400, 40.22px);
+        @include text(32px, 400, 40px);
         margin: 0;
         text-align: left;
 
@@ -25,11 +25,12 @@
 
     &-input{
         @include center;
-        @include text(20px, 700, 25.14px);
+        @include text(20px, 700, 25px);
         color: var(--color-icons);
         @include size(339px, 68px);
         border-radius: 15px;
         border: none;
+        outline: none;
 
     }
 }

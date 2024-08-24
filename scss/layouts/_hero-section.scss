@@ -1,72 +1,195 @@
 .hero-section{
     @include center;
-    padding-top: 196px;
+    padding-top: 384px;
     padding-bottom: 50px;
 
+    @media screen and (min-width: $bp-tablet) {
+    padding-top: 196px;
+    }  
+
     &__block{
-        display: flex;
+        @include center;
         flex-direction: column;
         width: 100%;
         
-    }
+            }
+        
 
     &__main{
-        margin-bottom: 437px;
+        @include size(100vw, 239px);
+            @include center;
+            flex-direction: column;
+            background-color: #FFFFFF99;
+            margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+                display: flex;
+                align-items: flex-start;
+                @include size(100vw,298px);
+                background-color: #FFFFFF99;
+                margin-bottom: 80px;
+                margin-left: 0;
+                
+             }  
+       
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            align-items: flex-start;
+            background-color: transparent;
+            margin-bottom: 437px;
+                        
+         }    
+
+         @media screen and (min-width: $bp-desktop-L) {
+            margin-left: auto;                  
+         }
 
         &::after{
             position: absolute;
-            @include size(900px, 690px);
+            @include size(380px, 424px);
             background: 
-             url('/images/hero-section-back.png') no-repeat right,
-             url('/images/hero-section-elipse.png') 70px 202px no-repeat;
+             url('/images/hero-back-mobile.png') no-repeat right;
             content: '';
             z-index: -1;
-            top: 226px;
-            right: auto;
-        }
+            top: 95px;
+            right: 0; 
+           
 
-    }
+            @media screen and (min-width: $bp-desktop) {
+                position: absolute;
+                @include size(880px, 690px);
+                background: 
+                 url('/images/hero-section-back.png') no-repeat right,
+                 url('/images/hero-section-elipse.png') 70px 202px no-repeat;
+                content: '';
+                z-index: -1;
+                top: 226px; 
+                right: 0;           
+              }
+
+              @media screen and (min-width: $bp-desktop-L) {
+                position: absolute;
+                @include size(880px, 690px);
+                background: 
+                 url('/images/hero-section-back.png') no-repeat right,
+                 url('/images/hero-section-elipse.png') 70px 182px no-repeat;
+                content: '';
+                z-index: -1;
+                top: 226px; 
+                right: 400px;  
+                }
+       
+                                        
+        }}
 
     &__title{
         color: var(--color-brand);
         font-family: 'Playfair Display', serif;
         font-style: italic;
-        @include text (48px, 500, 60px);
-        margin-bottom: 24px;
+        @include text (24px, 500, 32px);
+        margin-top: 0;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            @include text (32px, 500, 44px);
+            margin-bottom: 8px;
+            margin-left: 70px;
+          }        
+    
+         @media screen and (min-width: $bp-desktop) {
+          @include text (48px, 500, 60px);
+          margin-bottom: 8px;
+        }
+
+
 
         &-accent{
             font-style: normal;
-            @include text (86px, 400, 60px);
-            padding-left: 110px;
+            @include text (40px, 400, 40px);
+                padding-left: 0;
+           
+            @media screen and (min-width: $bp-tablet) {
+                @include text (86px, 400, 60px);
+                padding-left: 110px;
+            }
+
         }
     }
 
     &__text{
-        text-transform: capitalize;
-        @include text(24px, 400, 30.17px);
-        padding-left: 110px;
-        margin-bottom: 42px;
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+         display: flex;
+         text-transform: capitalize;
+         @include text(24px, 400, 30px);
+         padding-left: 0;
+         margin-top: 0;
+         margin-bottom: 42px;
+         margin-left: 110px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-left: 180px;
+        }
+
     }
 
     &__assets{
         @include center;
         flex-direction: row;
-        gap: 124px;
+        gap: 40px;   
+        
+        @media screen and (min-width: $bp-tablet) {
+            justify-content: space-between;
+        } 
+        
+        
+        @media screen and (min-width: $bp-desktop) {
+            @include size(865px, 95px);
+            justify-content: space-between;
+        } 
+
 
         &-blocks{
-            @include size(201px, 95px);
+            @include size(80px, 30px);
             text-align: center;
-                       
+
+            @media screen and (min-width: $bp-tablet) {
+             @include size(201px, 95px);
+            }
+                                    
         }
 
         &-img{
-            @include size (40px, 40px);
+            @include size (24px, 24px);
+
+            @media screen and (min-width: $bp-tablet) {
+                @include size (40px, 40px);
+            } 
+
             }
 
         &-text{
+            @include text(12px, 300, 15px);
             top: 0;
-            @include text(16px, 400, 20.11px);
             margin: 0;
+
+            @media screen and (min-width: $bp-tablet) {
+                @include text(16px, 300, 20px);
+            } 
+
+        }
+
+        &-text2{
+            display: none;
+
+            @media screen and (min-width: $bp-tablet) {
+                display: inline;
+            } 
+
         }
     }
+
 }
+    
