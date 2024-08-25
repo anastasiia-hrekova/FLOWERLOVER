@@ -1,24 +1,59 @@
 .asset{
     @include center;
-    margin-bottom: 132px;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-top: 400px;
+        margin-bottom: 80px;
+      }
+
+    @media screen and (min-width: $bp-desktop) {
+        margin-bottom: 132px;
+      }
 
 
     &__title{
+        display: flex;
+        justify-content: flex-end;
         position: relative;
-        @include text(36px, 600, 48px);
+        @include text(32px, 600, 43px);
         font-family: 'Playfair Display', serif;
         color: var(--color-brand);
         text-align: right;
-        margin-bottom: 140px;
-        margin-right: 196px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        margin-right: 90px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-right: 140px;
+          }
+
+          @media screen and (min-width: $bp-desktop) {
+            @include text(36px, 600, 48px);
+            margin-top: 220px;
+            margin-right: 196px;
+            margin-bottom: 140px;            
+            
+          }
 
         &::after{
             position: absolute;            
             content: '';
-            @include size(494px, 2px);
+            @include size(350px, 2px);
             background: var(--color-brand);
-            right: -195px;
+            left: auto;
+            right: -90px;
             bottom: 0;            
+
+            @media screen and (min-width: $bp-tablet) {
+                @include size(460px, 2px);
+                right: -190px;
+              }
+
+              @media screen and (min-width: $bp-desktop) {
+                @include size(494px, 2px);
+                right: -200px;
+              }
     }
 }
 
@@ -26,35 +61,109 @@
     @include center;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 &__item{
     @include center;
-    @include size(1307px, 477px);
-    flex-direction: column ;
+    width: 342px;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 120px;
+    gap: 8px;
     flex-wrap: wrap;
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
+    
+
+    @media screen and (min-width: $bp-tablet) {
+        @include size(750px, 256px);
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        @include size(1307px, 477px);
+        flex-direction: column ;
+        gap: 120px;
+        margin-bottom: 0;
+        
+      }
+
+      &-mobile{
+        display: flex;
+        margin-left: 16px;
+
+          @media screen and (min-width: $bp-tablet) {
+            display: none;
+            
+          }
+      }
+
+      &-tablet{
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            
+          }
+      }
 
     &-img{
-        @include size(658px, 477px);
+        @include size(342px, 200px);
+        margin-top: 0;
+        
+        @media screen and (min-width: $bp-tablet) {
+            @include size(356px, 256px);
+          }
+
+          @media screen and (min-width: $bp-desktop) {
+            @include size(658px, 477px);
+          }
             }
   
     &-title{
-        @include text(32px, 400, 40px);
+        @include text(24px, 400, 30px);
         color: var(--color-main-light);
-        margin-bottom: 16px;
+        margin-top: 0;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $bp-tablet) {
+            
+          }
+
+          @media screen and (min-width: $bp-desktop) {
+            @include text(32px, 400, 40px);
+            margin-bottom: 16px;
+          }
             }
 
     &-text{
-        @include text(20px, 300, 25px);
+        @include text(12px, 300, 15px);
+
+        @media screen and (min-width: $bp-tablet) {
+            
+          }
+
+          @media screen and (min-width: $bp-desktop) {
+            @include text(20px, 300, 25px);
+          }
     }
 } 
 
 &__text{ 
-    @include size(527px, 477px);  
-    margin-top: 69px;
+    width: 342px;; 
+    margin-top: 0;  
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-top: 46px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        @include size(527px, 477px);  
+        margin-top: 69px;
+      }
 }
 
 }

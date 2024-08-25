@@ -2,6 +2,13 @@
     position: relative;
     @include center;
     padding-top: 44px;
+    margin-bottom: 80px;
+        
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 92px;             
+            }
+
 
     &::after{        
 
@@ -24,7 +31,7 @@
         font-family: 'Playfair Display', serif;
         color: var(--color-brand);
         text-align: left;
-        margin-left: 224px;
+        margin-left: 200px;
         margin-bottom: 23px;
 
         @media screen and (min-width: $bp-desktop) {
@@ -62,7 +69,9 @@
 
         @media screen and (min-width: $bp-desktop) {
             width: 1085px ;
-            margin: 0 177px 50px 177px; 
+            margin-right: auto;
+            margin-bottom: 50px; 
+            margin-left: auto;
         }
         
         &-title{
@@ -140,18 +149,13 @@
     &__products{
         @include center;
         flex-direction: column;
-        margin-bottom: 80px;
-        
-
-        @media screen and (min-width: $bp-tablet) {
-            margin-bottom: 92px;             
-            }
+               
 
             &-title{
               margin-bottom: 16px;
 
               @media screen and (min-width: $bp-desktop) {
-                margin-bottom: 20px;             
+                margin-bottom: 20px;         
                 }
             }
     }
