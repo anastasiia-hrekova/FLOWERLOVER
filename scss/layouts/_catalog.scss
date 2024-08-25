@@ -3,15 +3,19 @@
     @include center;
     padding-top: 44px;
 
-    &::after{
-        position: absolute;
+    &::after{        
+
+        @media screen and (min-width: $bp-desktop) {
+            position: absolute;
         @include size(830px, 1415px);
         background-image: url('/images/catalog-background.png');
         background-repeat:  no-repeat;
         left: auto;
         right: 0;
         content: '';
-        z-index: -1;
+        z-index: -1;   
+        }
+
         }
 
     &__title{
@@ -20,8 +24,13 @@
         font-family: 'Playfair Display', serif;
         color: var(--color-brand);
         text-align: left;
-        margin-left: 349px;
-        margin-bottom: 100px;
+        margin-left: 224px;
+        margin-bottom: 23px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-left: 349px;
+            margin-bottom: 100px;     
+        }
  
         &::after{
             position: absolute;            
@@ -36,46 +45,94 @@
 
     &__sort{
         @include center;
-        width: 1085px ;
+        width: 360px ;
         flex-direction: column;
         background-color: #B96A7F80;
         border-radius: 15px;
-        margin: 0 177px 50px 177px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 750px ;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 1085px ;
+            margin: 0 177px 50px 177px; 
+        }
         
         &-title{
             font-family: 'Playfair Display', serif;
             text-align: center;
-            @include text(36px, 600, 48px);
+            @include text(24px, 600, 32px);
             margin-top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 0;
+
+            @media screen and (min-width: $bp-tablet) {
+                margin-bottom: 16px;
+            }
+
+            @media screen and (min-width: $bp-desktop) {
+                @include text(36px, 600, 48px);
+                margin-bottom: 20px;
+            }
         }
 
     }
 
     &__form{
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include size(360px, 155px);
+        background-color: var(--color-brand-dark);
+        border-radius: 15px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            @include size(750px, 64px);
+            }
+
+        @media screen and (min-width: $bp-desktop) {
         flex-direction: row;
         justify-content: space-between;
         @include size(1085px, 64px);
-        background-color: var(--color-brand-dark);
-        border-radius: 15px;
+        
+        }
                
         &-item{
-            @include size(140px, 23px);            
-            @include text(18px, 300, 23px);
+            @include size(328px, 23px);            
+            @include text(18px, 300, 22px);
             text-align: left;
             border: none;
             background-color:transparent;
             color: var(  --color-main-light);
-            margin-top: 20px;
-            margin-right: 25px;
-            margin-bottom: 20px;
-            margin-left: 25px;
-            
-            &-item:nth-child(2),
-            :nth-child(4){
-                @include size(230px, 23px);
-            }
+            margin-top: 4px;
+            margin-right: 16px;
+            margin-bottom: 4px;
+            margin-left: 16px;
+
+            @media screen and (min-width: $bp-tablet) {
+                @include size(110px, 23px); 
+                margin-top: 20px;
+                margin-right: 25px;
+                margin-bottom: 20px;
+                margin-left: 25px;                
+                }
+
+            @media screen and (min-width: $bp-desktop) {
+                @include size(140px, 23px); 
+                margin-top: 20px;
+                margin-right: 25px;
+                margin-bottom: 20px;
+                margin-left: 25px;                
+                }
+                        
         }
 
     }
@@ -83,23 +140,61 @@
     &__products{
         @include center;
         flex-direction: column;
-        margin-bottom: 92px
+        margin-bottom: 80px;
+        
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 92px;             
+            }
+
+            &-title{
+              margin-bottom: 16px;
+
+              @media screen and (min-width: $bp-desktop) {
+                margin-bottom: 20px;             
+                }
+            }
     }
+
+    
 
     &__list{
         @include center;
-        width: 1110px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 75px;
+        @include size(240px, 355px);
+        flex-direction: column;
+        flex-wrap: nowrap;
         margin-bottom: 60px; 
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 780px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 92px;             
+            }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 1110px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 33px;
+            margin-bottom: 92px;             
+            }
         
     }
 
     &__item{
-        @include size(320px, 413px);
+        @include size(240px, 355px);          
         background-color: var(  --color-main-light);
         border-radius: 15px;
         margin-bottom: -45px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 0;         
+            }       
+
+        @media screen and (min-width: $bp-desktop) {
+            @include size(320px, 413px);           
+            }
     }
 }
