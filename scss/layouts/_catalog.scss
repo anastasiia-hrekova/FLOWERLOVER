@@ -15,7 +15,7 @@
         @media screen and (min-width: $bp-desktop) {
             position: absolute;
         @include size(830px, 1415px);
-        background-image: url('/images/catalog-background.png');
+        background-image: url('../images/catalog-background.png');
         background-repeat:  no-repeat;
         top: 0;
         left: auto;

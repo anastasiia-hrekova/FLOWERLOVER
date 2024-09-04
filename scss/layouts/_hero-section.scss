@@ -48,7 +48,7 @@
             position: absolute;
             @include size(380px, 424px);
             background: 
-             url('/images/hero-back-mobile.png') no-repeat right;
+             url('../images/hero-back-mobile.png') no-repeat right;
             content: '';
             z-index: -1;
             top: 95px;
@@ -59,8 +59,8 @@
                 position: absolute;
                 @include size(880px, 690px);
                 background: 
-                 url('/images/hero-section-back.png') no-repeat right,
-                 url('/images/hero-section-elipse.png') 70px 202px no-repeat;
+                 url('../images/hero-section-back.png') no-repeat right,
+                 url('../images/hero-section-elipse.png') 70px 202px no-repeat;
                 content: '';
                 z-index: -1;
                 top: 226px; 
@@ -71,8 +71,8 @@
                 position: absolute;
                 @include size(880px, 690px);
                 background: 
-                 url('/images/hero-section-back.png') no-repeat right,
-                 url('/images/hero-section-elipse.png') 70px 182px no-repeat;
+                 url('../images/hero-section-back.png') no-repeat right,
+                 url('../images/hero-section-elipse.png') 70px 182px no-repeat;
                 content: '';
                 z-index: -1;
                 top: 226px; 

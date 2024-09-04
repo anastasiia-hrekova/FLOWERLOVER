@@ -5,7 +5,7 @@
     &::after{
         position: absolute;
         @include size(776px, 1104px);
-        background-image: url('/images/consult-back.png');
+        background-image: url('../images/consult-back.png');
         background-repeat: no-repeat;
         content: '';
         z-index: -1;
