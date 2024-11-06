@@ -1,4 +1,5 @@
 .consultation{
+    position: relative;
     @include center;
     margin-bottom: 121px;
 
@@ -9,7 +10,7 @@
         background-repeat: no-repeat;
         content: '';
         z-index: -1;
-        top: 4400px;
+        top: 0;
         left: 0;
     }
 

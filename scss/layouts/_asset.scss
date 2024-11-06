@@ -3,7 +3,6 @@
     margin-bottom: 80px;
 
     @media screen and (min-width: $bp-tablet) {
-        margin-top: 400px;
         margin-bottom: 80px;
       }
 
@@ -26,14 +25,7 @@
 
         @media screen and (min-width: $bp-tablet) {
             margin-right: 140px;
-          }
-
-          @media screen and (min-width: $bp-desktop) {
-            @include text(36px, 600, 48px);
-            margin-top: 220px;
-            margin-right: 196px;
-            margin-bottom: 140px;            
-            
+            margin-bottom: 45px;
           }
 
         &::after{
